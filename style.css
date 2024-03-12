@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4b86b4;
+}
+.skillbar {
+  width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+.bar {
+  margin: 20px 0px;
+}
+.bar:first-child {
+  margin-top: 0px;
+}
+.info span {
+  font-size: 17px;
+  font-weight: 500;
+}
