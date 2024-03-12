@@ -6,7 +6,7 @@
 }
 body {
   height: 100vh;
-  width: 100;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,78 @@ body {
 .bar:first-child {
   margin-top: 0px;
 }
+.info {
+  margin-bottom: 5px;
+}
 .info span {
   font-size: 17px;
   font-weight: 500;
+}
+.progress {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: rgb(201, 201, 201);
+  transform: scaleX(0);
+}
+.progress span {
+  border-radius: 10px;
+  height: 100%;
+  width: 80%;
+  background: #4b86b4;
+  position: absolute;
+}
+.html span {
+  width: 95%;
+}
+.css span {
+  width: 95%;
+}
+.python span {
+  width: 95%;
+}
+.c span {
+  width: 90%;
+}
+.cpp span {
+  width: 85%;
+}
+.progress span::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0%;
+  width: 0%;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+.progress span::after {
+  position: absolute;
+  content: "80px";
+  right: 0;
+  top: -24px;
+  color: #fff;
+  background: #000;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.progress.html span::after {
+  content: "95%";
+}
+.progress.css span::after {
+  content: "95%";
+}
+.progress.python span::after {
+  content: "95%";
+}
+.progress.c span::after {
+  content: "90%";
+}
+.progress.cpp span::after {
+  content: "85%";
 }
